@@ -3,30 +3,6 @@
 
 namespace CHEN
 {
-
-class ATest
-{
-public:
-	ATest() {}
-	~ATest() {}
-
-	void print()
-	{
-		std::cout << "Hello world! ATest" << std::endl;
-	}
-};
-class BTest
-{
-public:
-	BTest() {}
-	~BTest() {}
-
-	void print()
-	{
-		std::cout << "Hello world! BTest" << std::endl;
-	}
-};
-
 class CycThread
 {
 public:
@@ -62,7 +38,6 @@ public:
 		m_started = false;
 	}
 
-
 private:
 	std::function<void()> m_fnt;
 	std::thread m_t;
@@ -72,6 +47,31 @@ private:
 }
 
 using namespace CHEN;
+
+class ATest
+{
+public:
+	ATest() {}
+	~ATest() {}
+
+	void print()
+	{
+		std::cout << "Hello world! ATest" << std::endl;
+	}
+};
+class BTest
+{
+public:
+	BTest() {}
+	~BTest() {}
+
+	void print()
+	{
+		std::cout << "Hello world! BTest" << std::endl;
+	}
+};
+
+
 void test()
 {
 	ATest a;
